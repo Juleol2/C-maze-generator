@@ -15,12 +15,12 @@ Dynamic Memory & Structures: Built using custom Node structs with pointer-based 
 
 Console Visualization: Renders the maze layout and solution path dynamically in the terminal.
 
- Technical Implementation
+#Technical Implementation
 Language: C++ (Standard 11+)
 
 Architecture: Object-Oriented Design (OOP) with strict encapsulation.
 
-Core Algorithms:
+#Core Algorithms:
 
 Generation: Randomized Iterative Depth-First Search (Backtracking).
 
@@ -28,7 +28,7 @@ Solver: Recursive Depth-First Search.
 
 Data Structures: std::vector, std::stack, custom struct Node.
 
- How it Works
+ #How it Works
 The maze is modeled as a grid of Node objects. Each node contains pointers to its neighbors and boolean flags for walls.
 
 Initialization: A grid of isolated cells is created.
@@ -38,14 +38,12 @@ Generation: The "Drunken Walk" approach (Iterative DFS) visits cells, knocking d
 Solving: The solver traverses the generated maze recursively. When the 'End' node is found, the recursion unwinds, marking the successful path boolean onPath = true for visualization.
 
 
-Build & Run
+#Build & Run
 Prerequisites: G++ Compiler (or any standard C++ compiler).
 
 Bash
 
 # Clone the repository
-git clone https://github.com/your-username/cpp-maze-generator.git
-
 # Compile the source files
 g++ Main.cpp Class.cpp -o maze_solver
 
